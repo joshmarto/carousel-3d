@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     padding: 5,
     numVisible: 5,
     indicators: true,
-    noWrap: false
+    noWrap: false,
+    onCycleTo: () => {
+      setTimeout( () => {
+        M.Carousel.getInstance(car[0].el).next();
+      }, 4500);
+    },
   });
-
-  const interval = setInterval(() => {
-    var instance = M.Carousel.getInstance(elem);
-    instance.next(car);
-  }, 3000);
-  interval();
 });
