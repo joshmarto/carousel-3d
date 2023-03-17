@@ -44,6 +44,17 @@ body {
     background-color: #36221c;
 }
 
+.logo {
+    align-items: center;
+    padding: 30px;
+}
+
+#logo-main {
+    width: 80%;
+    height: 200px;
+    align-self: center;
+}
+
 /* ------------------------- */
 /* Estilos de Materialize */
 /* ------------------------- */
